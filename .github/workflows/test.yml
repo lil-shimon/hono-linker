@@ -30,4 +30,10 @@ jobs:
     # (オプション) テストカバレッジの結果をアップロード
     - name: Upload coverage reports
       uses: codecov/codecov-action@v3
-      if: always()  # テストが失敗しても常にカバレッジをアップロード 
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      if: always()  # テストが失敗しても常にカバレッジをアップロード
+      with:
+        files: ./coverage/coverage-final.json
+        fail_ci_if_error: true
+        verbose: true 
