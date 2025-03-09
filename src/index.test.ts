@@ -1,20 +1,8 @@
 import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import app from "./index";
-import { serve } from "@hono/node-server";
 
 describe("URL Shortener API", () => {
-  const server = serve(app);
   let shortId: string;
-
-  // テストスイート開始前にサーバーを起動
-  beforeAll(() => {
-    server.listen(0); // ランダムな空きポートを使用
-  });
-
-  // テストスイート終了後にサーバーを停止
-  afterAll(() => {
-    server.close();
-  });
 
   // 正常系のテスト
   describe("POST /shorten", () => {

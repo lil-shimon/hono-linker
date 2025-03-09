@@ -6,13 +6,14 @@ export default defineConfig({
     environment: "node",
     coverage: {
       provider: "v8",
-      reporter: ["text", "json", "json-summary"],
+      reporter: ["text", "json-summary", "html"],
       exclude: [
         "node_modules/**",
         "dist/**",
         "**/*.test.ts",
         "vitest.config.ts",
       ],
+      reportsDirectory: "./coverage",
     },
   },
 });
