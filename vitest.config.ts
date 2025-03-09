@@ -6,7 +6,7 @@ export default defineConfig({
     environment: "node",
     coverage: {
       provider: "v8",
-      reporter: ["text", "json-summary", "html"],
+      reporter: ["text", "json", "lcov"],
       exclude: [
         "node_modules/**",
         "dist/**",
@@ -14,6 +14,7 @@ export default defineConfig({
         "vitest.config.ts",
       ],
       reportsDirectory: "./coverage",
+      enabled: true,
     },
   },
 });

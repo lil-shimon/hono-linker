@@ -34,6 +34,6 @@ jobs:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       if: always()  # テストが失敗しても常にカバレッジをアップロード
       with:
-        files: ./coverage/coverage-final.json
+        files: ./coverage/lcov.info
         fail_ci_if_error: true
         verbose: true 
