@@ -1,5 +1,7 @@
 # URL Shortener with Hono
 
+![Test](https://github.com/{username}/{repository}/actions/workflows/test.yml/badge.svg)
+
 このプロジェクトは、HonoフレームワークとAWS Lambdaを使用したURL短縮サービスの学習用プロジェクトです。
 特筆すべき点として、**すべてのコードはAIアシスタント（Claude）との対話のみで作成**されており、人の手による直接的なコード修正は一切行っていません。
 
