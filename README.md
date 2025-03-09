@@ -1,6 +1,7 @@
 # URL Shortener with Hono
 
 ![Test](https://github.com/lil-shimon/hono-linker/actions/workflows/test.yml/badge.svg)
+[![codecov](https://codecov.io/gh/lil-shimon/hono-linker/branch/main/graph/badge.svg)](https://codecov.io/gh/lil-shimon/hono-linker)
 
 このプロジェクトは、HonoフレームワークとAWS Lambdaを使用したURL短縮サービスの学習用プロジェクトです。
 特筆すべき点として、**すべてのコードはAIアシスタント（Claude）との対話のみで作成**されており、人の手による直接的なコード修正は一切行っていません。
@@ -36,6 +37,26 @@
 - [Bun](https://bun.sh/) - JavaScriptランタイム
 - [Vitest](https://vitest.dev/) - テストフレームワーク
 - [nanoid](https://github.com/ai/nanoid) - ユニークID生成
+
+## テストカバレッジ
+
+このプロジェクトでは、以下の項目のテストカバレッジを重視しています：
+
+- **エンドポイント**: 各APIエンドポイントの動作確認
+- **バリデーション**: 入力値の検証処理
+- **エラーハンドリング**: エラー時の適切なレスポンス
+
+テストを実行するには：
+
+```bash
+# 通常のテスト実行
+bun test
+
+# カバレッジレポートの生成
+bun test:coverage
+```
+
+現在のカバレッジ状況は[Codecov](https://codecov.io/gh/lil-shimon/hono-linker)で確認できます。
 
 ## プロジェクト構造
 

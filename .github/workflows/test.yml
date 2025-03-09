@@ -24,6 +24,9 @@ jobs:
     - name: Run tests
       run: bun test
 
+    - name: Generate coverage report
+      run: bun test:coverage
+
     # (オプション) テストカバレッジのレポート
     - name: Run tests with coverage
       run: bun test --coverage
