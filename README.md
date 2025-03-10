@@ -62,6 +62,9 @@ bun test:coverage
 
 ```
 .
+├── .github/
+│   ├── workflows/         # GitHub Actions設定
+│   └── copilot-instructions.md  # Copilot設定
 ├── src/
 │   ├── index.ts        # メインアプリケーション（AI生成）
 │   └── index.test.ts   # テストコード（AI生成）
