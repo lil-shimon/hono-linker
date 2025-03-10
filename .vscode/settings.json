@@ -1,0 +1,29 @@
+{
+  "github.copilot.chat.localePreference": "ja",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
+  },
+  "github.copilot.advanced": {
+    "language": "ja"
+  },
+  "git.enableSmartCommit": true,
+  "git.inputValidation": true,
+  "git.postCommitCommand": "sync",
+  "[git-commit]": {
+    "editor.language": "ja"
+  },
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": ".github/copilot-instructions.md"
+    }
+  ],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "file": "docs/commit-message-guide.md"
+    }
+  ]
+} 
